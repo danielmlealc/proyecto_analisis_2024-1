@@ -15,30 +15,182 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0">
         <div class="container">
-            <h3 class="my-3">Nueva plaza</h3>
+            <h3 class="my-3">Predicción ICFES</h3>
 
             <form id="myForm" class="row g-3" method="post" autocomplete="off">
 
                 <div class="col-md-4">
-                    <label for="numero" class="form-label">Número</label>
-                    <input type="number" class="form-control" id="numero" name="numero" required autofocus>
+                    <label for="FAMI_PERSONASHOGAR" class="form-label">Número de personas en el hogar</label>
+                    <input type="number" class="form-control" id="FAMI_PERSONASHOGAR" name="FAMI_PERSONASHOGAR" required autofocus>
                 </div>
 
-                <div class="col-md-8">
-                    <label for="tipo" class="form-label">Tipo</label>
-                    <select class="form-control" name="tipo" id="tipo">
-                        <option value="1">Carro</option>
-                        <option value="2">Moto</option>
+                <div class="col-md-4">
+                    <label for="FAMI_CUARTOSHOGAR" class="form-label">Número de cuartos en el hogar</label>
+                    <input type="number" class="form-control" id="FAMI_CUARTOSHOGAR" name="FAMI_CUARTOSHOGAR" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_EDUCACIONPADRE" class="form-label">Nivel de educación del padre</label>
+                    <select class="form-control" name="FAMI_EDUCACIONPADRE" id="FAMI_EDUCACIONPADRE" required>
+                        <option value="1">Educación básica primaria</option>
+                        <option value="2">Educación básica secundaria</option>
+                        <option value="3">Educación media técnica</option>
+                        <option value="4">Educación media académica</option>
+                        <option value="5">Educación técnica profesional</option>
+                        <option value="6">Educación tecnológica</option>
+                        <option value="7">Educación profesional</option>
+                        <option value="8">Educación especializada de posgrado</option>
                     </select>
                 </div>
 
-                <div class="col-md-8">
-                    <label for="planta" class="form-label">Planta</label>
-                    <select class="form-control" name="planta" id="planta">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
+                <div class="col-md-4">
+                    <label for="FAMI_EDUCACIONMADRE" class="form-label">Nivel de educación de la madre</label>
+                    <select class="form-control" name="FAMI_EDUCACIONMADRE" id="FAMI_EDUCACIONMADRE" required>
+                        <option value="1">Educación básica primaria</option>
+                        <option value="2">Educación básica secundaria</option>
+                        <option value="3">Educación media técnica</option>
+                        <option value="4">Educación media académica</option>
+                        <option value="5">Educación técnica profesional</option>
+                        <option value="6">Educación tecnológica</option>
+                        <option value="7">Educación profesional</option>
+                        <option value="8">Educación especializada de posgrado</option>
                     </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="ESTU_NSE_INDIVIDUAL" class="form-label">Nivel socioeconómico del estudiante</label>
+                    <select class="form-control" name="ESTU_NSE_INDIVIDUAL" id="ESTU_NSE_INDIVIDUAL" required>
+                        <option value="1">Bajo</option>
+                        <option value="2">Medio bajo</option>
+                        <option value="3">Medio</option>
+                        <option value="4">Medio alto</option>
+                        <option value="5">Alto</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENEINTERNET" class="form-label">Tiene acceso a Internet</label>
+                    <select class="form-control" name="FAMI_TIENEINTERNET" id="FAMI_TIENEINTERNET" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENECOMPUTADOR" class="form-label">Tiene computadora</label>
+                    <select class="form-control" name="FAMI_TIENECOMPUTADOR" id="FAMI_TIENECOMPUTADOR" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENESERVICIOTV" class="form-label">Tiene servicio de TV</label>
+                    <select class="form-control" name="FAMI_TIENESERVICIOTV" id="FAMI_TIENESERVICIOTV" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENEHORNOMICROOGAS" class="form-label">Tiene horno microondas</label>
+                    <select class="form-control" name="FAMI_TIENEHORNOMICROOGAS" id="FAMI_TIENEHORNOMICROOGAS" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENEAUTOMOVIL" class="form-label">Tiene automóvil</label>
+                    <select class="form-control" name="FAMI_TIENEAUTOMOVIL" id="FAMI_TIENEAUTOMOVIL" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENECONSOLAVIDEOJUEGOS" class="form-label">Tiene consola de videojuegos</label>
+                    <select class="form-control" name="FAMI_TIENECONSOLAVIDEOJUEGOS" id="FAMI_TIENECONSOLAVIDEOJUEGOS" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_TIENEMOTOCICLETA" class="form-label">Tiene motocicleta</label>
+                    <select class="form-control" name="FAMI_TIENEMOTOCICLETA" id="FAMI_TIENEMOTOCICLETA" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_COMELECHEDERIVADOS" class="form-label">Consume productos lácteos</label>
+                    <select class="form-control" name="FAMI_COMELECHEDERIVADOS" id="FAMI_COMELECHEDERIVADOS" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_COMECARNEPESCADOHUEVO" class="form-label">Consume carne, pescado y huevos</label>
+                    <select class="form-control" name="FAMI_COMECARNEPESCADOHUEVO" id="FAMI_COMECARNEPESCADOHUEVO" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="FAMI_COMECEREALFRUTOSLEGUMBRE" class="form-label">Consume cereales, frutas y legumbres</label>
+                    <select class="form-control" name="FAMI_COMECEREALFRUTOSLEGUMBRE" id="FAMI_COMECEREALFRUTOSLEGUMBRE" required>
+                        <option value="1">Si</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="ESTU_DEDICACIONLECTURADIARIA" class="form-label">Dedica horas diarias a la lectura</label>
+                    <input type="number" class="form-control" id="ESTU_DEDICACIONLECTURADIARIA" name="ESTU_DEDICACIONLECTURADIARIA" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="ESTU_DEDICACIONINTERNET" class="form-label">Dedica horas diarias a Internet</label>
+                    <input type="number" class="form-control" id="ESTU_DEDICACIONINTERNET" name="ESTU_DEDICACIONINTERNET" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="ESTU_HORASSEMANATRABAJA" class="form-label">Horas semanales que trabaja el estudiante</label>
+                    <input type="number" class="form-control" id="ESTU_HORASSEMANATRABAJA" name="ESTU_HORASSEMANATRABAJA" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="COLE_CARACTER" class="form-label">Carácter del colegio</label>
+                    <select class="form-control" name="COLE_CARACTER" id="COLE_CARACTER" required>
+                        <option value="1">No oficial</option>
+                        <option value="0">Oficial</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="COLE_AREA_UBICACION" class="form-label">Área de ubicación del colegio</label>
+                    <select class="form-control" name="COLE_AREA_UBICACION" id="COLE_AREA_UBICACION" required>
+                        <option value="1">Urbana</option>
+                        <option value="0">Rural</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="COLE_JORNADA" class="form-label">Jornada del colegio</label>
+                    <select class="form-control" name="COLE_JORNADA" id="COLE_JORNADA" required>
+                        <option value="0">Mañana</option>
+                        <option value="1">Tarde</option>
+                        <option value="2">Noche</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="EDAD" class="form-label">Edad del estudiante</label>
+                    <input type="number" class="form-control" id="EDAD" name="EDAD" required>
                 </div>
 
                 <div class="col-12">
